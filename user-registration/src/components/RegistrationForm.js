@@ -8,7 +8,6 @@ import axios from 'axios';
 
 // Loading the API constants 
 const host_site = process.env.REACT_APP_HOST
-const port = process.env.REACT_APP_BACKEND_PORT
 
 // Defining the form class 
 class RegistrationForm extends React.Component {
@@ -20,7 +19,7 @@ class RegistrationForm extends React.Component {
     }
 
     postUser = () => {
-        const APIurl = 'https://' + host_site + ':' + port + '/register';
+        const APIurl = 'https://' + host_site + '/register';
         axios({
             url: APIurl, 
             method: 'post', 

@@ -8,7 +8,6 @@ import axios from 'axios';
 
 // Loading the API constants 
 const host_site = process.env.REACT_APP_HOST
-const port = process.env.REACT_APP_BACKEND_PORT
 const username = process.env.REACT_APP_USERNAME
 const password = process.env.REACT_APP_PASSWORD
 
@@ -28,7 +27,7 @@ class APIcall extends React.Component {
     }
 
     getProb = () => {
-        const APIurl = 'https://' + host_site + ':' + port + '/v2/predict';
+        const APIurl = 'https://' + host_site + '/v2/predict';
         axios({
             url: APIurl, 
             method: 'get', 
