@@ -26,8 +26,6 @@ class RegistrationForm extends React.Component {
     postUser = () => {
         const APIurl = 'http://' + host_site + ':' + port + '/register';
         const secret = secret_key;
-        console.log(this.state);
-        console.log(secret_key.toString());
         const payload = {
             "username": CryptoJS.AES.encrypt(this.state.username, secret).toString(),
             "password": CryptoJS.AES.encrypt(this.state.password, secret).toString(), 
@@ -38,9 +36,7 @@ class RegistrationForm extends React.Component {
             url: APIurl, 
             method: 'post', 
             data: payload 
-        }).then(
-            res => console.log(res)
-        )
+        })
     }
 
     render() {
