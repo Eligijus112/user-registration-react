@@ -63,3 +63,11 @@ ul.react-tabs__tab-list{
   text-align: center;
   font-weight: bold;
 }
+
+.card { 
+  padding: 0.5rem;
+}
+
+.card-title {
+  font-weight: bold;
+}
