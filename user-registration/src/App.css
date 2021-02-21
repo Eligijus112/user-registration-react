@@ -1,0 +1,30 @@
+.main-page {
+  text-align: center;
+  padding: 1rem;
+}
+
+.form {
+  text-align: left;
+  width: min-content;
+  margin: 1em auto;
+  background: #EFEFEF;
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 1em;
+
+}
+
+.submit-user {
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-group {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.main-page-header {
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(1, 6, 15);
+}
