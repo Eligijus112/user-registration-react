@@ -28,7 +28,7 @@ class APIcall extends React.Component {
     }
 
     getProb = () => {
-        const APIurl = 'http://' + host_site + ':' + port + '/v2/predict';
+        const APIurl = 'https://' + host_site + ':' + port + '/v2/predict';
         axios({
             url: APIurl, 
             method: 'get', 

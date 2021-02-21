@@ -20,7 +20,7 @@ class RegistrationForm extends React.Component {
     }
 
     postUser = () => {
-        const APIurl = 'http://' + host_site + ':' + port + '/register';
+        const APIurl = 'https://' + host_site + ':' + port + '/register';
         axios({
             url: APIurl, 
             method: 'post', 
