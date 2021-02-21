@@ -28,3 +28,38 @@
   font-weight: bold;
   color: rgb(1, 6, 15);
 }
+
+/* Tabs */
+
+ul.react-tabs__tab-list{
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  animation: fadeIn 1s ease;
+  font-size: calc(2vmin);
+  margin:0;
+  padding-left: 0;
+}
+
+.react-tabs__tab{
+  font-size: 1.5rem;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.25em;
+  margin-left: 0;
+  opacity: 0.5;
+}
+
+.react-tabs__tab--selected{
+  background: #282c34;
+  color: white;
+  opacity: 1;
+}
+
+.p-results{
+  padding: 1rem;
+  background: white; 
+  outline: solid;
+  text-align: center;
+  font-weight: bold;
+}
