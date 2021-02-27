@@ -14,6 +14,10 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 class App extends Component {
 
+  componentDidMount(){
+    document.title = "Heart CHD API"
+  }
+
   render() {
 
     return (
