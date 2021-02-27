@@ -181,7 +181,7 @@ class APIcall extends React.Component {
                     <Form.Control
                             as='select'
                             value={this.state.male}
-                            onChange={e => this.setState({ currentSmoker: e.target.value })}
+                            onChange={e => this.setState({ male: e.target.value })}
                         >
                         <option value='0'> No </option>
                         <option value='1'> Yes </option>
