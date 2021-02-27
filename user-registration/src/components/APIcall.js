@@ -11,12 +11,13 @@ const host_site = process.env.REACT_APP_HOST
 const username = process.env.REACT_APP_USERNAME
 const password = process.env.REACT_APP_PASSWORD
 const http = process.env.REACT_APP_HTTP_METHOD
-const port = ":" + process.env.REACT_APP_BACKEND_PORT + "/"
+var port 
 
 if (process.env.REACT_APP_BACKEND_PORT=="80"){
-    const port = ''
+    port = "/"
+} else {
+    port = ":" + process.env.REACT_APP_BACKEND_PORT + "/"
 }
-
 
 // Defining the form class 
 class APIcall extends React.Component {
