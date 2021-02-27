@@ -29,6 +29,19 @@
   color: rgb(1, 6, 15);
 }
 
+.features-info {
+  text-align: left;
+  width: 20rem;
+  margin: 1em auto;
+  background: #EFEFEF;
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 1em;
+}
+
+.features-entry {
+  padding: 0.5rem;
+}
+
 /* Tabs */
 
 ul.react-tabs__tab-list{
